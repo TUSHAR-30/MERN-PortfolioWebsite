@@ -74,7 +74,7 @@ function Projects() {
                         </a>
                         <a className="flex gap-2 mt-4 hover:text-blue-600 cursor-pointer transition-all duration-300">
                             <CiLink className="text-2xl self-center" />
-                            <a href={projects[selectedItemIndex].link} className="text-xs self-center">View Github</a>
+                            <a href={projects[selectedItemIndex].github} className="text-xs self-center">View Github</a>
                         </a>
                     </div>
                 </div>
