@@ -51,7 +51,10 @@ function AdminProjects() {
     const onDelete=async(item)=>{
         try{
             dispatch(ShowLoading());
-            const response=await axios.post('/api/portfolio/delete-project',{
+            const response=await axios.post(
+                // '/api/portfolio/delete-project',
+                `${process.env.REACT_APP_BACKEND_URL}/api/portfolio/delete-project`,
+            {
                 _id:item._id
             });
             dispatch(HideLoading());
